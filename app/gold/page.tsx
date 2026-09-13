@@ -623,7 +623,7 @@ export default function GoldMenuPage() {
           HERO
       ===================================================== */}
 
-      <section className="relative overflow-hidden border-b border-[#dfd2bc] bg-[#fbfaf7] px-5 pb-14 pt-32 md:px-8 md:pb-16 md:pt-36">
+      <section className="relative overflow-hidden border-b border-[#dfd2bc] bg-[#fbfaf7] px-5 pb-12 pt-28 sm:pb-14 sm:pt-32 md:px-8 md:pb-16 md:pt-36">
 
         {/* BACKGROUND DECORATION */}
         <div className="pointer-events-none absolute -left-28 -top-28 h-72 w-72 rounded-full border-[18px] border-[#b18a4a]/10" />
@@ -661,34 +661,34 @@ export default function GoldMenuPage() {
               <span className="h-px flex-1 bg-[#b18a4a]" />
             </div>
 
-            <h1 className="mt-6 font-serif text-5xl font-semibold tracking-wide text-[#29231e] md:text-7xl">
+            <h1 className="mt-6 font-serif text-4xl font-semibold tracking-wide text-[#29231e] sm:text-5xl md:text-7xl">
               Golden Menu
             </h1>
 
-            <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-[#6f665d] md:text-base">
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-[#6f665d] sm:mt-5 md:text-base">
               A premium selection of carefully curated dishes
               for memorable celebrations at Boudha Heritage.
             </p>
 
             {/* PRICE + PACKAGE */}
-            <div className="mx-auto mt-8 flex max-w-xl flex-col items-center justify-center gap-4 sm:flex-row">
+            <div className="mx-auto mt-7 flex max-w-xl flex-col items-stretch justify-center gap-3 sm:mt-8 sm:flex-row sm:items-center sm:gap-4">
 
-              <div className="rounded-full border border-[#d8c6a7] bg-white px-8 py-4 shadow-sm">
+              <div className="rounded-2xl border border-[#d8c6a7] bg-white px-6 py-4 shadow-sm sm:rounded-full sm:px-8">
                 <span className="block text-[9px] font-bold uppercase tracking-[0.25em] text-[#8b8177]">
                   RATE PER PERSON
                 </span>
 
-                <strong className="mt-1 block font-serif text-3xl text-[#a8792d]">
+                <strong className="mt-1 block font-serif text-2xl text-[#a8792d] sm:text-3xl">
                   Rs. 2,775
                 </strong>
               </div>
 
-              <div className="rounded-full bg-[#b18a4a] px-8 py-4 text-white shadow-[0_10px_30px_rgba(120,90,35,0.18)]">
+              <div className="rounded-2xl bg-[#b18a4a] px-6 py-4 text-white shadow-[0_10px_30px_rgba(120,90,35,0.18)] sm:rounded-full sm:px-8">
                 <span className="block text-[9px] font-bold uppercase tracking-[0.25em] text-white/80">
                   GOLD PACKAGE
                 </span>
 
-                <strong className="mt-1 block text-2xl">
+                <strong className="mt-1 block text-xl sm:text-2xl">
                   43 Items
                 </strong>
               </div>
@@ -711,7 +711,7 @@ export default function GoldMenuPage() {
               THE GOLD EXPERIENCE
             </p>
 
-            <h2 className="mt-2 font-serif text-4xl font-semibold md:text-5xl">
+            <h2 className="mt-2 font-serif text-3xl font-semibold sm:text-4xl md:text-5xl">
               Gold Menu
             </h2>
 
@@ -745,7 +745,7 @@ export default function GoldMenuPage() {
                 {nonVegSection.choice}
               </p>
 
-              <h2 className="mt-2 font-serif text-3xl font-semibold md:text-4xl">
+              <h2 className="mt-2 font-serif text-2xl font-semibold sm:text-3xl md:text-4xl">
                 Non-Veg Snacks
               </h2>
 
@@ -774,7 +774,7 @@ export default function GoldMenuPage() {
               PREMIUM GOLD MENU SELECTION
             </p>
 
-            <h2 className="mt-2 font-serif text-4xl font-semibold md:text-5xl">
+            <h2 className="mt-2 font-serif text-3xl font-semibold sm:text-4xl md:text-5xl">
               Main Course
             </h2>
 
@@ -839,7 +839,7 @@ export default function GoldMenuPage() {
               ENHANCE YOUR CELEBRATION
             </p>
 
-            <h2 className="mt-2 font-serif text-4xl font-semibold md:text-5xl">
+            <h2 className="mt-2 font-serif text-3xl font-semibold sm:text-4xl md:text-5xl">
               Additional Menu
             </h2>
 
@@ -850,7 +850,7 @@ export default function GoldMenuPage() {
           </div>
 
           {/* THREE SPECIAL CARDS */}
-          <div className="grid gap-5 md:grid-cols-3">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
 
             {additionalMenu.map((item) => (
               <motion.div
@@ -941,7 +941,7 @@ export default function GoldMenuPage() {
               COMPLETE YOUR CELEBRATION
             </p>
 
-            <h2 className="mt-2 font-serif text-4xl font-semibold md:text-5xl">
+            <h2 className="mt-2 font-serif text-3xl font-semibold sm:text-4xl md:text-5xl">
               Additional Services
             </h2>
 
@@ -981,26 +981,26 @@ export default function GoldMenuPage() {
           </div>
 
           {/* FREE ROOM */}
-          <div className="mt-10 flex items-center justify-center gap-5 rounded-[20px] border border-[#d8c39d] bg-[#f4ecdc] px-6 py-6 text-center">
+          <div className="mt-10 flex flex-col items-center justify-center gap-3 rounded-[20px] border border-[#d8c39d] bg-[#f4ecdc] px-5 py-5 text-center sm:flex-row sm:gap-5 sm:px-6 sm:py-6">
 
             <span className="text-[#b18a4a]">
               ✦
             </span>
 
             <p className="text-sm leading-6 text-[#6e6254]">
-              Dressing Room & Refreshment Room provided{" "}
+              Dressing Room &amp; Refreshment Room provided{" "}
               <strong className="text-[#8e6727]">
                 FREE OF COST
               </strong>
             </p>
 
-            <span className="text-[#b18a4a]">
+            <span className="hidden text-[#b18a4a] sm:inline">
               ✦
             </span>
 
           </div>
 
-          <p className="mt-12 text-center font-serif text-2xl italic text-[#594d40] md:text-3xl">
+          <p className="mt-10 text-center font-serif text-xl italic text-[#594d40] sm:mt-12 sm:text-2xl md:text-3xl">
             One-stop solution for your unforgettable celebrations.
           </p>
 

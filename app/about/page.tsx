@@ -62,7 +62,7 @@ export default function AboutPage() {
           HERO
       ===================================================== */}
 
-      <section className="relative flex min-h-[82vh] items-end overflow-hidden bg-[#211d18]">
+      <section className="relative flex min-h-[75vh] items-end overflow-hidden bg-[#211d18] sm:min-h-[82vh]">
 
         <video
           className="absolute inset-0 h-full w-full object-cover"
@@ -78,7 +78,7 @@ export default function AboutPage() {
 
         <div className="absolute inset-0 bg-gradient-to-t from-[#17120e]/85 via-transparent to-[#17120e]/10" />
 
-        <div className="relative z-10 mx-auto w-full max-w-[1600px] px-6 pb-20 pt-40 md:px-10 md:pb-28 lg:px-16">
+        <div className="relative z-10 mx-auto w-full max-w-[1600px] px-5 pb-16 pt-32 sm:px-6 sm:pb-20 sm:pt-40 md:px-10 md:pb-28 lg:px-16">
 
           <motion.div
             variants={fadeUp}
@@ -87,12 +87,12 @@ export default function AboutPage() {
             className="max-w-5xl"
           >
 
-            <div className="mb-7 flex items-center gap-4 text-[10px] font-semibold tracking-[0.45em] text-[#e3c38b]">
-              <span className="h-px w-12 bg-[#d0a75f]" />
+            <div className="mb-6 flex items-center gap-3 text-[9px] font-semibold tracking-[0.35em] text-[#e3c38b] sm:mb-7 sm:gap-4 sm:text-[10px] sm:tracking-[0.45em]">
+              <span className="h-px w-8 bg-[#d0a75f] sm:w-12" />
               ABOUT BOUDHA HERITAGE
             </div>
 
-            <h1 className="font-serif text-6xl leading-[0.88] tracking-[-0.03em] text-white sm:text-7xl md:text-8xl lg:text-[110px]">
+            <h1 className="font-serif text-[42px] leading-[0.95] tracking-[-0.02em] text-white xs:text-5xl sm:text-6xl sm:leading-[0.88] md:text-7xl lg:text-8xl xl:text-[110px]">
               Where every
               <span className="block text-[#dfbd7e]">
                 celebration
@@ -102,7 +102,7 @@ export default function AboutPage() {
               </span>
             </h1>
 
-            <p className="mt-8 max-w-2xl text-sm leading-8 text-white/75 md:text-lg">
+            <p className="mt-6 max-w-2xl text-sm leading-7 text-white/75 sm:mt-8 sm:leading-8 md:text-lg">
               Boudha Heritage is a celebration destination in Kathmandu,
               bringing together elegant spaces, authentic hospitality and
               memorable dining experiences.
@@ -130,7 +130,7 @@ export default function AboutPage() {
           INTRODUCTION
       ===================================================== */}
 
-      <section className="relative overflow-hidden px-6 py-28 md:py-36 lg:px-16">
+      <section className="relative overflow-hidden px-5 py-20 sm:px-6 sm:py-28 md:py-36 lg:px-16">
 
         {/* Decorative circle */}
         <div className="pointer-events-none absolute left-1/2 top-1/2 h-[620px] w-[620px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#b89455]/10" />
@@ -149,14 +149,14 @@ export default function AboutPage() {
             THE HERITAGE EXPERIENCE
           </div>
 
-          <h2 className="mt-6 font-serif text-5xl leading-[0.95] tracking-[-0.025em] text-[#302b25] md:text-7xl">
+          <h2 className="mt-6 font-serif text-4xl leading-[0.95] tracking-[-0.025em] text-[#302b25] sm:text-5xl md:text-7xl">
             More than a venue.
             <span className="block italic text-[#b89455]">
               A place to celebrate.
             </span>
           </h2>
 
-          <p className="mx-auto mt-8 max-w-2xl text-sm leading-8 text-[#6f675d] md:text-lg">
+          <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-[#6f675d] sm:mt-8 sm:leading-8 md:text-lg">
             From intimate gatherings to grand celebrations, Boudha Heritage
             offers a distinctive setting where timeless surroundings,
             hospitality and celebration come together.
@@ -179,7 +179,7 @@ export default function AboutPage() {
           HIGHLIGHTS
       ===================================================== */}
 
-      <section className="border-y border-[#ded5c7] bg-[#eee8dc] px-6 py-24 md:py-32 lg:px-16">
+      <section className="border-y border-[#ded5c7] bg-[#eee8dc] px-5 py-16 sm:px-6 sm:py-24 md:py-32 lg:px-16">
 
         <div className="mx-auto max-w-[1400px]">
 
@@ -188,14 +188,14 @@ export default function AboutPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mb-14"
+            className="mb-10 sm:mb-14"
           >
 
             <div className="text-[10px] font-semibold tracking-[0.45em] text-[#b89455]">
               WHAT DEFINES US
             </div>
 
-            <h2 className="mt-5 max-w-3xl font-serif text-5xl leading-[0.95] tracking-[-0.025em] text-[#302b25] md:text-7xl">
+            <h2 className="mt-5 max-w-3xl font-serif text-4xl leading-[0.95] tracking-[-0.025em] text-[#302b25] sm:text-5xl md:text-7xl">
               Designed around
               <span className="block italic text-[#b89455]">
                 your celebration.
@@ -205,7 +205,7 @@ export default function AboutPage() {
           </motion.div>
 
 
-          <div className="grid gap-5 md:grid-cols-3">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
 
             {highlights.map((item, index) => (
 
@@ -218,7 +218,7 @@ export default function AboutPage() {
                   duration: 0.7,
                   delay: index * 0.1,
                 }}
-                className="group rounded-[1.5rem] border border-[#ded5c7] bg-white p-8 shadow-[0_15px_45px_rgba(64,48,28,0.04)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_25px_60px_rgba(64,48,28,0.09)]"
+                className="group rounded-[1.5rem] border border-[#ded5c7] bg-white p-6 shadow-[0_15px_45px_rgba(64,48,28,0.04)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_25px_60px_rgba(64,48,28,0.09)] sm:p-8"
               >
 
                 <div className="flex items-center justify-between">
@@ -231,7 +231,7 @@ export default function AboutPage() {
 
                 </div>
 
-                <h3 className="mt-8 font-serif text-3xl text-[#302b25]">
+                <h3 className="mt-6 font-serif text-2xl text-[#302b25] sm:mt-8 sm:text-3xl">
                   {item.title}
                 </h3>
 
@@ -254,11 +254,11 @@ export default function AboutPage() {
           OUR APPROACH
       ===================================================== */}
 
-      <section className="relative overflow-hidden bg-[#f7f3ea] px-6 py-28 md:py-36 lg:px-16">
+      <section className="relative overflow-hidden bg-[#f7f3ea] px-5 py-20 sm:px-6 sm:py-28 md:py-36 lg:px-16">
 
         <div className="mx-auto max-w-[1400px]">
 
-          <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-24">
+          <div className="grid items-center gap-12 sm:gap-16 lg:grid-cols-2 lg:gap-24">
 
             {/* Left Content */}
             <motion.div
@@ -272,14 +272,14 @@ export default function AboutPage() {
                 OUR APPROACH
               </div>
 
-              <h2 className="mt-6 font-serif text-5xl leading-[0.95] tracking-[-0.025em] text-[#302b25] md:text-7xl">
+              <h2 className="mt-6 font-serif text-4xl leading-[0.95] tracking-[-0.025em] text-[#302b25] sm:text-5xl md:text-7xl">
                 Every detail
                 <span className="block italic text-[#b89455]">
                   has a purpose.
                 </span>
               </h2>
 
-              <p className="mt-8 max-w-xl text-sm leading-8 text-[#6f675d] md:text-base">
+              <p className="mt-6 max-w-xl text-sm leading-7 text-[#6f675d] sm:mt-8 sm:leading-8 md:text-base">
                 A memorable celebration is created through more than just a
                 beautiful space. It is the atmosphere, the hospitality, the
                 dining and the moments shared with the people who matter.
@@ -310,7 +310,7 @@ export default function AboutPage() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
-              className="relative min-h-[430px] overflow-hidden rounded-[2rem] border border-[#ded5c7] bg-white shadow-[0_25px_80px_rgba(64,48,28,0.08)]"
+              className="relative min-h-[360px] overflow-hidden rounded-[1.75rem] border border-[#ded5c7] bg-white shadow-[0_25px_80px_rgba(64,48,28,0.08)] sm:min-h-[430px] sm:rounded-[2rem]"
             >
 
               {/* Decorative circles */}
@@ -325,11 +325,11 @@ export default function AboutPage() {
 
               <div className="absolute bottom-8 right-8 h-10 w-10 border-b border-r border-[#b89455]/30" />
 
-              <div className="relative flex min-h-[430px] items-center justify-center">
+              <div className="relative flex min-h-[360px] items-center justify-center sm:min-h-[430px]">
 
                 <div className="text-center">
 
-                  <div className="font-serif text-7xl tracking-[-0.04em] text-[#b89455] md:text-9xl">
+                  <div className="font-serif text-6xl tracking-[-0.04em] text-[#b89455] sm:text-7xl md:text-9xl">
                     2,000
                   </div>
 
@@ -360,11 +360,11 @@ export default function AboutPage() {
           EXPERIENCE
       ===================================================== */}
 
-      <section className="border-y border-[#ded5c7] bg-[#eee8dc] px-6 py-24 md:py-32 lg:px-16">
+      <section className="border-y border-[#ded5c7] bg-[#eee8dc] px-5 py-16 sm:px-6 sm:py-24 md:py-32 lg:px-16">
 
         <div className="mx-auto max-w-[1400px]">
 
-          <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
+          <div className="grid gap-10 sm:gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
 
             <motion.div
               variants={fadeUp}
@@ -377,7 +377,7 @@ export default function AboutPage() {
                 THE EXPERIENCE
               </div>
 
-              <h2 className="mt-5 font-serif text-5xl leading-[0.95] tracking-[-0.025em] text-[#302b25] md:text-7xl">
+              <h2 className="mt-5 font-serif text-4xl leading-[0.95] tracking-[-0.025em] text-[#302b25] sm:text-5xl md:text-7xl">
                 A destination
                 <span className="block italic text-[#b89455]">
                   for moments.
@@ -392,10 +392,10 @@ export default function AboutPage() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="space-y-6"
+              className="space-y-5 sm:space-y-6"
             >
 
-              <p className="text-base leading-8 text-[#6f675d] md:text-lg">
+              <p className="text-sm leading-7 text-[#6f675d] sm:text-base sm:leading-8 md:text-lg">
                 Whether it is a wedding, reception, ceremony or a special
                 gathering, Boudha Heritage provides a setting designed to make
                 the occasion feel truly significant.
@@ -444,7 +444,7 @@ export default function AboutPage() {
           CTA
       ===================================================== */}
 
-      <section className="relative overflow-hidden bg-[#2b241c] px-6 py-28 md:py-36 lg:px-16">
+      <section className="relative overflow-hidden bg-[#2b241c] px-5 py-20 sm:px-6 sm:py-28 md:py-36 lg:px-16">
 
         {/* Decorative circles */}
         <div className="absolute -right-32 -top-32 h-[450px] w-[450px] rounded-full border border-[#d0a75f]/10" />
@@ -465,8 +465,8 @@ export default function AboutPage() {
             YOUR CELEBRATION AWAITS
           </div>
 
-          <h2 className="mt-6 font-serif text-5xl leading-[0.95] tracking-[-0.025em] text-white md:text-8xl">
-            Let's create
+          <h2 className="mt-6 font-serif text-4xl leading-[0.95] tracking-[-0.025em] text-white sm:text-5xl md:text-7xl lg:text-8xl">
+            Let&apos;s create
             <span className="block italic text-[#dfbd7e]">
               something beautiful.
             </span>

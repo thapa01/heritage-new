@@ -108,7 +108,7 @@ export default function AvailabilityPage() {
           HERO
       ===================================================== */}
 
-      <section className="relative overflow-hidden px-6 pb-16 pt-36 md:pb-20 md:pt-44">
+      <section className="relative overflow-hidden px-5 pb-12 pt-28 sm:px-6 sm:pb-16 sm:pt-36 md:pb-20 md:pt-44">
         {/* Soft background glow */}
         <div className="pointer-events-none absolute left-1/2 top-20 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#c59a52]/10 blur-[130px]" />
 
@@ -118,22 +118,22 @@ export default function AvailabilityPage() {
           transition={{ duration: 0.8 }}
           className="relative mx-auto max-w-4xl text-center"
         >
-          <div className="flex items-center justify-center gap-4 text-[10px] font-semibold tracking-[0.45em] text-[#a77d3d]">
-            <span className="h-px w-12 bg-[#b89455]" />
+          <div className="flex items-center justify-center gap-3 text-[9px] font-semibold tracking-[0.35em] text-[#a77d3d] sm:gap-4 sm:text-[10px] sm:tracking-[0.45em]">
+            <span className="h-px w-8 bg-[#b89455] sm:w-12" />
 
             AVAILABILITY
 
-            <span className="h-px w-12 bg-[#b89455]" />
+            <span className="h-px w-8 bg-[#b89455] sm:w-12" />
           </div>
 
-          <h1 className="mt-6 font-serif text-5xl leading-tight tracking-[-0.03em] md:text-7xl lg:text-8xl">
+          <h1 className="mt-6 font-serif text-4xl leading-tight tracking-[-0.03em] sm:text-5xl md:text-7xl lg:text-8xl">
             Find your
             <span className="block italic text-[#b89455]">
               perfect date.
             </span>
           </h1>
 
-          <p className="mx-auto mt-7 max-w-xl text-sm leading-7 text-[#6f675d] md:text-base">
+          <p className="mx-auto mt-6 max-w-xl text-sm leading-7 text-[#6f675d] sm:mt-7 md:text-base">
             Check our calendar and choose an available date for
             your celebration at Boudha Heritage.
           </p>
@@ -144,9 +144,9 @@ export default function AvailabilityPage() {
           CALENDAR SECTION
       ===================================================== */}
 
-      <section className="px-6 pb-28 md:pb-36">
+      <section className="px-5 pb-20 sm:px-6 sm:pb-28 md:pb-36">
         <div className="mx-auto max-w-6xl">
-          <div className="grid gap-8 lg:grid-cols-[1fr_330px]">
+          <div className="grid gap-6 sm:gap-8 lg:grid-cols-[1fr_330px]">
 
             {/* =================================================
                 CALENDAR CARD
@@ -156,21 +156,21 @@ export default function AvailabilityPage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.15 }}
-              className="rounded-[2rem] border border-[#ded6c8] bg-white p-6 shadow-[0_25px_80px_rgba(67,52,32,0.07)] md:p-10"
+              className="rounded-[1.5rem] border border-[#ded6c8] bg-white p-4 shadow-[0_25px_80px_rgba(67,52,32,0.07)] sm:rounded-[2rem] sm:p-6 md:p-10"
             >
               {/* Calendar Header */}
 
-              <div className="flex items-center justify-between border-b border-[#e8e1d6] pb-7">
+              <div className="flex items-center justify-between border-b border-[#e8e1d6] pb-5 sm:pb-7">
                 <button
                   type="button"
                   onClick={previousMonth}
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-[#ddd3c3] text-[#766d61] transition hover:border-[#b89455] hover:bg-[#b89455]/5 hover:text-[#a77d3d]"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-[#ddd3c3] text-[#766d61] transition hover:border-[#b89455] hover:bg-[#b89455]/5 hover:text-[#a77d3d] sm:h-11 sm:w-11"
                 >
                   ←
                 </button>
 
                 <div className="text-center">
-                  <div className="font-serif text-3xl tracking-[-0.02em] text-[#302b25]">
+                  <div className="font-serif text-2xl tracking-[-0.02em] text-[#302b25] sm:text-3xl">
                     {monthNames[month]}
                   </div>
 
@@ -182,7 +182,7 @@ export default function AvailabilityPage() {
                 <button
                   type="button"
                   onClick={nextMonth}
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-[#ddd3c3] text-[#766d61] transition hover:border-[#b89455] hover:bg-[#b89455]/5 hover:text-[#a77d3d]"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-[#ddd3c3] text-[#766d61] transition hover:border-[#b89455] hover:bg-[#b89455]/5 hover:text-[#a77d3d] sm:h-11 sm:w-11"
                 >
                   →
                 </button>
@@ -190,11 +190,11 @@ export default function AvailabilityPage() {
 
               {/* Week Days */}
 
-              <div className="mt-8 grid grid-cols-7">
+              <div className="mt-6 grid grid-cols-7 sm:mt-8">
                 {weekDays.map((day) => (
                   <div
                     key={day}
-                    className="pb-4 text-center text-[9px] font-semibold tracking-[0.15em] text-[#aaa196]"
+                    className="pb-3 text-center text-[8px] font-semibold tracking-[0.12em] text-[#aaa196] sm:pb-4 sm:text-[9px] sm:tracking-[0.15em]"
                   >
                     {day}
                   </div>
@@ -203,13 +203,13 @@ export default function AvailabilityPage() {
 
               {/* Calendar Dates */}
 
-              <div className="grid grid-cols-7 gap-y-3">
+              <div className="grid grid-cols-7 gap-y-2 sm:gap-y-3">
                 {calendarDays.map((day, index) => {
                   if (day === null) {
                     return (
                       <div
                         key={`empty-${index}`}
-                        className="h-12"
+                        className="h-10 sm:h-12"
                       />
                     );
                   }
@@ -230,8 +230,9 @@ export default function AvailabilityPage() {
                       disabled={!isAvailable}
                       onClick={() => handleDateClick(day)}
                       className={`
-                        mx-auto flex h-12 w-12 items-center justify-center
-                        rounded-full text-sm transition-all duration-300
+                        mx-auto flex h-9 w-9 items-center justify-center
+                        rounded-full text-xs transition-all duration-300
+                        sm:h-12 sm:w-12 sm:text-sm
                         ${
                           isSelected
                             ? "bg-[#b89455] font-semibold text-white shadow-[0_8px_25px_rgba(184,148,85,0.28)]"
@@ -249,7 +250,7 @@ export default function AvailabilityPage() {
 
               {/* Calendar Bottom Note */}
 
-              <div className="mt-8 border-t border-[#e8e1d6] pt-6">
+              <div className="mt-6 border-t border-[#e8e1d6] pt-5 sm:mt-8 sm:pt-6">
                 <p className="text-center text-xs leading-6 text-[#999084]">
                   Select a highlighted date to continue with your
                   event inquiry.
@@ -265,13 +266,13 @@ export default function AvailabilityPage() {
               initial={{ opacity: 0, x: 25 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.25 }}
-              className="rounded-[2rem] border border-[#ded6c8] bg-[#eee8dc] p-7 shadow-[0_25px_80px_rgba(67,52,32,0.05)] md:p-8"
+              className="rounded-[1.5rem] border border-[#ded6c8] bg-[#eee8dc] p-6 shadow-[0_25px_80px_rgba(67,52,32,0.05)] sm:rounded-[2rem] sm:p-7 md:p-8"
             >
               <div className="text-[10px] font-semibold tracking-[0.4em] text-[#a77d3d]">
                 PLAN YOUR EVENT
               </div>
 
-              <h2 className="mt-5 font-serif text-3xl leading-tight tracking-[-0.02em] text-[#302b25]">
+              <h2 className="mt-5 font-serif text-2xl leading-tight tracking-[-0.02em] text-[#302b25] sm:text-3xl">
                 Choose an
                 <span className="block italic text-[#b89455]">
                   available date.

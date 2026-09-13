@@ -41,7 +41,7 @@ export default function GalleryPage() {
     <main className="min-h-screen bg-[#f7f3ea] text-[#211f1b]">
 
       {/* HERO */}
-      <section className="relative overflow-hidden px-6 pb-12 pt-32 md:px-10 md:pb-16 md:pt-36 lg:px-16">
+      <section className="relative overflow-hidden px-5 pb-10 pt-28 sm:px-6 sm:pb-12 sm:pt-32 md:px-10 md:pb-16 md:pt-36 lg:px-16">
         <div
           className="pointer-events-none absolute inset-0 opacity-40"
           style={{
@@ -70,7 +70,7 @@ export default function GalleryPage() {
           }}
         />
 
-        <div className="pointer-events-none absolute -right-16 top-16 select-none font-serif text-[220px] leading-none text-[#a18758]/[0.045] md:text-[360px]">
+        <div className="pointer-events-none absolute -right-8 top-14 select-none font-serif text-[140px] leading-none text-[#a18758]/[0.045] sm:-right-16 sm:top-16 sm:text-[220px] md:text-[360px]">
           BH
         </div>
 
@@ -93,7 +93,7 @@ export default function GalleryPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, delay: 0.08 }}
-            className="max-w-4xl font-serif text-5xl leading-[0.98] tracking-[-0.035em] md:text-6xl lg:text-7xl"
+            className="max-w-4xl font-serif text-4xl leading-[1.02] tracking-[-0.03em] sm:text-5xl sm:leading-[0.98] md:text-6xl lg:text-7xl"
           >
             A heritage of moments,
             <br />
@@ -116,7 +116,7 @@ export default function GalleryPage() {
       </section>
 
       {/* VIDEOS */}
-      <section className="relative px-6 pb-20 md:px-10 lg:px-16">
+      <section className="relative px-5 pb-16 sm:px-6 sm:pb-20 md:px-10 lg:px-16">
         <div className="mx-auto max-w-[1500px]">
 
           <div className="mb-7 flex items-end justify-between border-b border-[#211f1b]/10 pb-4">
@@ -138,7 +138,7 @@ export default function GalleryPage() {
           </div>
 
           {/* ALL VIDEOS */}
-          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
 
             {videos.map((video, index) => (
               <motion.div
@@ -195,7 +195,7 @@ export default function GalleryPage() {
       </section>
 
       {/* PHOTOS */}
-      <section className="border-t border-[#211f1b]/10 px-6 py-20 md:px-10 lg:px-16">
+      <section className="border-t border-[#211f1b]/10 px-5 py-16 sm:px-6 sm:py-20 md:px-10 lg:px-16">
 
         <div className="mx-auto max-w-[1500px]">
 
@@ -206,7 +206,7 @@ export default function GalleryPage() {
                 Visuals
               </p>
 
-              <h2 className="font-serif text-3xl md:text-4xl">
+              <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl">
                 Photos
               </h2>
             </div>
@@ -217,7 +217,7 @@ export default function GalleryPage() {
 
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
 
             {photos.map((photo, index) => (
               <motion.div
@@ -264,15 +264,15 @@ export default function GalleryPage() {
       </section>
 
       {/* ENDING */}
-      <section className="px-6 pb-20 pt-2 text-center md:px-10 lg:px-16">
+      <section className="px-5 pb-16 pt-2 text-center sm:px-6 sm:pb-20 md:px-10 lg:px-16">
 
-        <div className="mx-auto max-w-2xl border-t border-[#211f1b]/10 pt-12">
+        <div className="mx-auto max-w-2xl border-t border-[#211f1b]/10 pt-10 sm:pt-12">
 
           <p className="text-[10px] uppercase tracking-[0.3em] text-[#a18758]">
             Boudha Heritage
           </p>
 
-          <h2 className="mt-4 font-serif text-2xl leading-tight text-[#211f1b]/75 md:text-3xl">
+          <h2 className="mt-4 font-serif text-xl leading-tight text-[#211f1b]/75 sm:text-2xl md:text-3xl">
             Beautiful moments deserve
             <br />
             <span className="text-[#a18758]">

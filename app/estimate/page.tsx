@@ -32,31 +32,31 @@ export default function EstimatePage() {
   const estimatedCost = menu.price * guests;
 
   return (
-    <main className="min-h-screen bg-[#f7f3ea] px-6 pb-28 pt-36 text-[#2c2822] md:pt-44">
+    <main className="min-h-screen bg-[#f7f3ea] px-5 pb-20 pt-28 text-[#2c2822] sm:px-6 sm:pb-28 sm:pt-36 md:pt-44">
       <div className="mx-auto max-w-6xl">
 
         {/* =====================================================
             HEADER
         ===================================================== */}
 
-        <div className="mx-auto mb-16 max-w-3xl text-center">
+        <div className="mx-auto mb-12 max-w-3xl text-center sm:mb-16">
 
-          <div className="flex items-center justify-center gap-4 text-[10px] font-semibold tracking-[0.45em] text-[#a77d3d]">
-            <span className="h-px w-12 bg-[#b89455]" />
+          <div className="flex items-center justify-center gap-3 text-[9px] font-semibold tracking-[0.35em] text-[#a77d3d] sm:gap-4 sm:text-[10px] sm:tracking-[0.45em]">
+            <span className="h-px w-8 bg-[#b89455] sm:w-12" />
 
             PLAN YOUR CELEBRATION
 
-            <span className="h-px w-12 bg-[#b89455]" />
+            <span className="h-px w-8 bg-[#b89455] sm:w-12" />
           </div>
 
-          <h1 className="mt-6 font-serif text-5xl leading-tight tracking-[-0.03em] md:text-7xl">
+          <h1 className="mt-6 font-serif text-4xl leading-tight tracking-[-0.03em] sm:text-5xl md:text-7xl">
             Estimate Your
             <span className="block italic text-[#b89455]">
               Celebration Cost
             </span>
           </h1>
 
-          <p className="mx-auto mt-7 max-w-2xl text-sm leading-7 text-[#6f675d] md:text-base">
+          <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-[#6f675d] sm:mt-7 md:text-base">
             Select your menu package, number of guests and venue
             to get an estimated cost for your celebration.
           </p>
@@ -68,13 +68,13 @@ export default function EstimatePage() {
             MAIN CONTENT
         ===================================================== */}
 
-        <div className="grid gap-8 lg:grid-cols-[1.35fr_0.8fr]">
+        <div className="grid gap-6 sm:gap-8 lg:grid-cols-[1.35fr_0.8fr]">
 
           {/* =================================================
               LEFT — OPTIONS
           ================================================= */}
 
-          <div className="rounded-[2rem] border border-[#ded6c8] bg-white p-7 shadow-[0_25px_80px_rgba(67,52,32,0.07)] md:p-10">
+          <div className="rounded-[1.5rem] border border-[#ded6c8] bg-white p-5 shadow-[0_25px_80px_rgba(67,52,32,0.07)] sm:rounded-[2rem] sm:p-7 md:p-10">
 
             {/* MENU */}
 
@@ -84,7 +84,7 @@ export default function EstimatePage() {
                 01 — SELECT MENU
               </p>
 
-              <div className="grid gap-4 md:grid-cols-3">
+              <div className="grid gap-3 sm:gap-4 md:grid-cols-3">
 
                 {menus.map((item) => {
                   const active = selectedMenu === item.name;
@@ -231,7 +231,7 @@ export default function EstimatePage() {
               RIGHT — ESTIMATE
           ================================================= */}
 
-          <div className="relative overflow-hidden rounded-[2rem] border border-[#ded6c8] bg-[#eee8dc] p-8 shadow-[0_25px_80px_rgba(67,52,32,0.06)] md:p-10">
+          <div className="relative overflow-hidden rounded-[1.5rem] border border-[#ded6c8] bg-[#eee8dc] p-6 shadow-[0_25px_80px_rgba(67,52,32,0.06)] sm:rounded-[2rem] sm:p-8 md:p-10">
 
             {/* Decorative circles */}
 
@@ -244,7 +244,7 @@ export default function EstimatePage() {
               YOUR ESTIMATE
             </p>
 
-            <h2 className="relative mt-5 font-serif text-3xl tracking-[-0.02em] text-[#302b25]">
+            <h2 className="relative mt-5 font-serif text-2xl tracking-[-0.02em] text-[#302b25] sm:text-3xl">
               Celebration Summary
             </h2>
 
@@ -309,7 +309,7 @@ export default function EstimatePage() {
                 ESTIMATED FOOD COST
               </p>
 
-              <div className="mt-3 font-serif text-4xl tracking-[-0.02em] text-[#a77d3d]">
+              <div className="mt-3 break-words font-serif text-3xl tracking-[-0.02em] text-[#a77d3d] sm:text-4xl">
                 Rs. {estimatedCost.toLocaleString()}
               </div>
 

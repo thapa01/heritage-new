@@ -48,7 +48,7 @@ export default function InquiryPage() {
           HERO
       ===================================================== */}
 
-      <section className="relative overflow-hidden px-6 pb-16 pt-36 md:pb-20 md:pt-44">
+      <section className="relative overflow-hidden px-5 pb-12 pt-28 sm:px-6 sm:pb-16 sm:pt-36 md:pb-20 md:pt-44">
 
         <div className="pointer-events-none absolute left-1/2 top-20 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#c59a52]/10 blur-[130px]" />
 
@@ -59,22 +59,22 @@ export default function InquiryPage() {
           className="relative mx-auto max-w-4xl text-center"
         >
 
-          <div className="flex items-center justify-center gap-4 text-[10px] font-semibold tracking-[0.45em] text-[#a77d3d]">
-            <span className="h-px w-12 bg-[#b89455]" />
+          <div className="flex items-center justify-center gap-3 text-[9px] font-semibold tracking-[0.35em] text-[#a77d3d] sm:gap-4 sm:text-[10px] sm:tracking-[0.45em]">
+            <span className="h-px w-8 bg-[#b89455] sm:w-12" />
 
             EVENT INQUIRY
 
-            <span className="h-px w-12 bg-[#b89455]" />
+            <span className="h-px w-8 bg-[#b89455] sm:w-12" />
           </div>
 
-          <h1 className="mt-6 font-serif text-5xl leading-tight tracking-[-0.03em] md:text-7xl lg:text-8xl">
-            Let's plan your
+          <h1 className="mt-6 font-serif text-4xl leading-tight tracking-[-0.03em] sm:text-5xl md:text-7xl lg:text-8xl">
+            Let&apos;s plan your
             <span className="block italic text-[#b89455]">
               celebration.
             </span>
           </h1>
 
-          <p className="mx-auto mt-7 max-w-xl text-sm leading-7 text-[#6f675d] md:text-base">
+          <p className="mx-auto mt-6 max-w-xl text-sm leading-7 text-[#6f675d] sm:mt-7 md:text-base">
             Tell us a little about your event and our team will
             help you create a memorable experience at Boudha
             Heritage.
@@ -89,7 +89,7 @@ export default function InquiryPage() {
           FORM SECTION
       ===================================================== */}
 
-      <section className="px-6 pb-28 md:pb-36">
+      <section className="px-5 pb-20 sm:px-6 sm:pb-28 md:pb-36">
 
         <div className="mx-auto max-w-6xl">
 
@@ -97,20 +97,20 @@ export default function InquiryPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15 }}
-            className="grid gap-8 lg:grid-cols-[300px_1fr]"
+            className="grid gap-6 sm:gap-8 lg:grid-cols-[300px_1fr]"
           >
 
             {/* =================================================
                 SELECTED DATE CARD
             ================================================= */}
 
-            <div className="h-fit rounded-[2rem] border border-[#ded6c8] bg-[#eee8dc] p-7 shadow-[0_25px_80px_rgba(67,52,32,0.05)] md:p-8">
+            <div className="h-fit rounded-[1.5rem] border border-[#ded6c8] bg-[#eee8dc] p-6 shadow-[0_25px_80px_rgba(67,52,32,0.05)] sm:rounded-[2rem] sm:p-7 md:p-8">
 
               <div className="text-[10px] font-semibold tracking-[0.4em] text-[#a77d3d]">
                 YOUR DATE
               </div>
 
-              <div className="mt-6 font-serif text-3xl leading-tight tracking-[-0.02em] text-[#302b25]">
+              <div className="mt-5 font-serif text-2xl leading-tight tracking-[-0.02em] text-[#302b25] sm:mt-6 sm:text-3xl">
                 {formattedDate}
               </div>
 
@@ -135,13 +135,13 @@ export default function InquiryPage() {
                 FORM CARD
             ================================================= */}
 
-            <div className="rounded-[2rem] border border-[#ded6c8] bg-white p-7 shadow-[0_25px_80px_rgba(67,52,32,0.07)] md:p-10">
+            <div className="rounded-[1.5rem] border border-[#ded6c8] bg-white p-6 shadow-[0_25px_80px_rgba(67,52,32,0.07)] sm:rounded-[2rem] sm:p-7 md:p-10">
 
               <form onSubmit={handleSubmit}>
 
                 {/* FORM FIELDS */}
 
-                <div className="grid gap-8 md:grid-cols-2">
+                <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
 
                   {/* NAME */}
 

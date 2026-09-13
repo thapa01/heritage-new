@@ -144,7 +144,7 @@ export default function Home() {
 
         <div className="pointer-events-none absolute left-[8%] top-[25%] h-72 w-72 rounded-full bg-[#d6bd8d]/20 blur-[110px]" />
 
-        <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-6 pb-20 pt-32 lg:px-8">
+        <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-5 pb-24 pt-28 sm:px-6 sm:pb-20 sm:pt-32 lg:px-8">
 
           <motion.div
             variants={fadeUp}
@@ -153,12 +153,12 @@ export default function Home() {
             className="max-w-3xl"
           >
 
-            <div className="mb-7 flex items-center gap-4 text-[10px] font-medium tracking-[0.45em] text-[#ead6ad]">
-              <span className="h-px w-12 bg-[#d6bd8d]" />
+            <div className="mb-6 flex items-center gap-3 text-[9px] font-medium tracking-[0.35em] text-[#ead6ad] sm:mb-7 sm:gap-4 sm:text-[10px] sm:tracking-[0.45em]">
+              <span className="h-px w-8 bg-[#d6bd8d] sm:w-12" />
               BOUDHA · KATHMANDU · NEPAL
             </div>
 
-            <h1 className="font-serif text-6xl leading-[0.92] tracking-[-0.025em] text-white sm:text-7xl md:text-8xl lg:text-[105px]">
+            <h1 className="font-serif text-[44px] leading-[0.95] tracking-[-0.02em] text-white xs:text-5xl sm:text-6xl sm:leading-[0.92] md:text-7xl lg:text-8xl xl:text-[105px]">
               A Place Where
 
               <span className="block text-[#e2c78e]">
@@ -170,61 +170,61 @@ export default function Home() {
               </span>
             </h1>
 
-            <p className="mt-8 max-w-xl text-base leading-8 text-white/80 md:text-lg">
+            <p className="mt-6 max-w-xl text-sm leading-7 text-white/80 sm:mt-8 sm:text-base sm:leading-8 md:text-lg">
               Timeless spaces, authentic flavors and unforgettable
               celebrations in the heart of Boudha.
             </p>
 
-            <div className="mt-9 flex flex-wrap gap-4">
+            <div className="mt-7 flex flex-wrap gap-3 sm:mt-9 sm:gap-4">
 
               <Link
                 href="/availability"
-                className="group rounded-full bg-[#d6bd8d] px-7 py-4 text-xs font-semibold tracking-[0.18em] text-[#27231e] shadow-lg shadow-black/10 transition duration-300 hover:-translate-y-1 hover:bg-[#ead6ad]"
+                className="group rounded-full bg-[#d6bd8d] px-6 py-3.5 text-[11px] font-semibold tracking-[0.16em] text-[#27231e] shadow-lg shadow-black/10 transition duration-300 hover:-translate-y-1 hover:bg-[#ead6ad] sm:px-7 sm:py-4 sm:text-xs sm:tracking-[0.18em]"
               >
                 CHECK AVAILABILITY
 
-                <span className="ml-3 transition group-hover:translate-x-1">
+                <span className="ml-2 transition group-hover:translate-x-1 sm:ml-3">
                   →
                 </span>
               </Link>
 
               <Link
                 href="/venues/grand-hall"
-                className="rounded-full border border-white/50 bg-white/10 px-7 py-4 text-xs font-semibold tracking-[0.18em] text-white backdrop-blur-md transition duration-300 hover:border-[#ead6ad] hover:bg-white/20 hover:text-[#ead6ad]"
+                className="rounded-full border border-white/50 bg-white/10 px-6 py-3.5 text-[11px] font-semibold tracking-[0.16em] text-white backdrop-blur-md transition duration-300 hover:border-[#ead6ad] hover:bg-white/20 hover:text-[#ead6ad] sm:px-7 sm:py-4 sm:text-xs sm:tracking-[0.18em]"
               >
                 EXPLORE VENUES
               </Link>
 
             </div>
 
-            <div className="mt-14 grid max-w-2xl grid-cols-3 border-t border-white/25 pt-7">
+            <div className="mt-10 grid max-w-2xl grid-cols-3 gap-2 border-t border-white/25 pt-6 sm:mt-14 sm:gap-0 sm:pt-7">
 
               <div>
-                <div className="font-serif text-3xl text-[#ead6ad]">
+                <div className="font-serif text-2xl text-[#ead6ad] sm:text-3xl">
                   2,000
                 </div>
 
-                <div className="mt-2 text-[9px] tracking-[0.22em] text-white/65">
+                <div className="mt-1.5 text-[8px] leading-tight tracking-[0.18em] text-white/65 sm:mt-2 sm:text-[9px] sm:tracking-[0.22em]">
                   GUEST CAPACITY
                 </div>
               </div>
 
-              <div className="border-l border-white/20 pl-6">
-                <div className="font-serif text-3xl text-[#ead6ad]">
+              <div className="border-l border-white/20 pl-3 sm:pl-6">
+                <div className="font-serif text-2xl text-[#ead6ad] sm:text-3xl">
                   02
                 </div>
 
-                <div className="mt-2 text-[9px] tracking-[0.22em] text-white/65">
+                <div className="mt-1.5 text-[8px] leading-tight tracking-[0.18em] text-white/65 sm:mt-2 sm:text-[9px] sm:tracking-[0.22em]">
                   SIGNATURE VENUES
                 </div>
               </div>
 
-              <div className="border-l border-white/20 pl-6">
-                <div className="font-serif text-3xl text-[#ead6ad]">
+              <div className="border-l border-white/20 pl-3 sm:pl-6">
+                <div className="font-serif text-2xl text-[#ead6ad] sm:text-3xl">
                   03
                 </div>
 
-                <div className="mt-2 text-[9px] tracking-[0.22em] text-white/65">
+                <div className="mt-1.5 text-[8px] leading-tight tracking-[0.18em] text-white/65 sm:mt-2 sm:text-[9px] sm:tracking-[0.22em]">
                   MENU EXPERIENCES
                 </div>
               </div>
@@ -243,9 +243,9 @@ export default function Home() {
         <button
           type="button"
           onClick={() => setIsMuted(!isMuted)}
-          className="absolute bottom-8 left-8 z-30 flex items-center gap-3 rounded-full border border-white/30 bg-black/20 px-5 py-3 text-[10px] tracking-[0.18em] text-white/90 backdrop-blur-md transition hover:border-[#ead6ad] hover:text-[#ead6ad]"
+          className="absolute bottom-5 left-4 z-30 flex items-center gap-2 rounded-full border border-white/30 bg-black/25 px-3.5 py-2 text-[9px] tracking-[0.15em] text-white/90 backdrop-blur-md transition hover:border-[#ead6ad] hover:text-[#ead6ad] sm:bottom-8 sm:left-8 sm:gap-3 sm:px-5 sm:py-3 sm:text-[10px] sm:tracking-[0.18em]"
         >
-          <span className="text-base">
+          <span className="text-sm sm:text-base">
             {isMuted ? "🔇" : "🔊"}
           </span>
 
@@ -311,7 +311,7 @@ export default function Home() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        className="relative overflow-hidden bg-[#f7f3ea] px-6 py-28 md:py-36"
+        className="relative overflow-hidden bg-[#f7f3ea] px-5 py-20 sm:px-6 sm:py-28 md:py-36"
       >
 
         <div className="pointer-events-none absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#b89455]/15" />
@@ -322,7 +322,7 @@ export default function Home() {
             THE BOUDHA EXPERIENCE
           </div>
 
-          <h2 className="mt-6 font-serif text-5xl leading-tight tracking-[-0.02em] text-[#2c2822] md:text-7xl">
+          <h2 className="mt-6 font-serif text-4xl leading-tight tracking-[-0.02em] text-[#2c2822] sm:text-5xl md:text-7xl">
             Where tradition meets
 
             <span className="block italic text-[#b89455]">
@@ -330,7 +330,7 @@ export default function Home() {
             </span>
           </h2>
 
-          <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-[#756e64] md:text-lg">
+          <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-[#756e64] sm:mt-7 sm:text-base sm:leading-8 md:text-lg">
             From intimate gatherings to grand celebrations,
             Boudha Heritage brings together elegant spaces,
             authentic hospitality and carefully crafted experiences.
@@ -347,7 +347,7 @@ export default function Home() {
 
       <section
         id="menus"
-        className="relative overflow-hidden bg-[#eee8dc] px-6 py-28 md:py-32"
+        className="relative overflow-hidden bg-[#eee8dc] px-5 py-20 sm:px-6 sm:py-28 md:py-32"
       >
 
         <div className="pointer-events-none absolute right-[-200px] top-20 h-[600px] w-[600px] rounded-full border border-[#b89455]/15" />
@@ -368,7 +368,7 @@ export default function Home() {
                 OUR MENU
               </div>
 
-              <h2 className="mt-5 font-serif text-5xl leading-none tracking-[-0.02em] text-[#2c2822] md:text-7xl">
+              <h2 className="mt-5 font-serif text-4xl leading-none tracking-[-0.02em] text-[#2c2822] sm:text-5xl md:text-7xl">
                 A Taste of
 
                 <span className="block italic text-[#b89455]">
@@ -401,7 +401,7 @@ export default function Home() {
 
                 <Link
                   href={menu.href}
-                  className="group relative block h-[480px] overflow-hidden rounded-3xl border border-[#ddd2c1] bg-white shadow-[0_15px_50px_rgba(60,45,25,0.08)]"
+                  className="group relative block h-[420px] overflow-hidden rounded-3xl border border-[#ddd2c1] bg-white shadow-[0_15px_50px_rgba(60,45,25,0.08)] sm:h-[460px] md:h-[480px]"
                 >
 
                   <img
@@ -429,13 +429,13 @@ export default function Home() {
                     {menu.number}
                   </div>
 
-                  <div className="absolute bottom-0 left-0 right-0 p-7">
+                  <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-7">
 
                     <div className="text-[9px] font-medium tracking-[0.3em] text-[#ead6ad]">
                       {menu.subtitle}
                     </div>
 
-                    <h3 className="mt-3 font-serif text-4xl text-white">
+                    <h3 className="mt-3 font-serif text-3xl text-white sm:text-4xl">
                       {menu.name}
                     </h3>
 
@@ -443,9 +443,9 @@ export default function Home() {
                       {menu.description}
                     </p>
 
-                    <div className="mt-5 flex items-center justify-between border-t border-white/25 pt-5">
+                    <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-white/25 pt-5">
 
-                      <div className="font-serif text-xl text-[#ead6ad]">
+                      <div className="font-serif text-lg text-[#ead6ad] sm:text-xl">
                         {menu.price}
 
                         <span className="ml-1 font-sans text-[9px] text-white/60">
@@ -478,11 +478,11 @@ export default function Home() {
           VENUES
       ===================================================== */}
 
-      <section className="relative bg-[#f7f3ea] px-6 py-28 md:py-32">
+      <section className="relative bg-[#f7f3ea] px-5 py-20 sm:px-6 sm:py-28 md:py-32">
 
         <div className="mx-auto max-w-7xl">
 
-          <div className="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div className="mb-12 flex flex-col justify-between gap-6 sm:mb-14 md:flex-row md:items-end">
 
             <div>
 
@@ -490,7 +490,7 @@ export default function Home() {
                 OUR VENUES
               </div>
 
-              <h2 className="mt-5 font-serif text-5xl tracking-[-0.02em] text-[#2c2822] md:text-7xl">
+              <h2 className="mt-5 font-serif text-4xl tracking-[-0.02em] text-[#2c2822] sm:text-5xl md:text-7xl">
                 Spaces for
 
                 <span className="block italic text-[#b89455]">
@@ -527,7 +527,7 @@ export default function Home() {
 
                 <Link
                   href={venue.href}
-                  className="group relative block min-h-[440px] overflow-hidden rounded-3xl border border-[#ddd2c1] bg-[#eee8dc] shadow-[0_15px_50px_rgba(60,45,25,0.06)]"
+                  className="group relative block min-h-[380px] overflow-hidden rounded-3xl border border-[#ddd2c1] bg-[#eee8dc] shadow-[0_15px_50px_rgba(60,45,25,0.06)] sm:min-h-[440px]"
                 >
 
                   <div className="absolute inset-0 bg-gradient-to-br from-[#e6dccb] via-[#f5f0e7] to-[#d9ccb8]" />
@@ -538,13 +538,13 @@ export default function Home() {
 
                   <div className="absolute inset-0 bg-gradient-to-t from-[#b9a992]/60 via-transparent to-transparent" />
 
-                  <div className="absolute bottom-0 left-0 right-0 p-8">
+                  <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
 
                     <div className="mb-3 text-[9px] tracking-[0.3em] text-[#b89455]">
                       0{index + 1}
                     </div>
 
-                    <h3 className="font-serif text-4xl text-[#2c2822]">
+                    <h3 className="font-serif text-3xl text-[#2c2822] sm:text-4xl">
                       {venue.title}
                     </h3>
 
@@ -579,7 +579,7 @@ export default function Home() {
           BOOKING PROCEDURE
       ===================================================== */}
 
-      <section className="relative overflow-hidden bg-[#eee8dc] px-6 py-28 md:py-32">
+      <section className="relative overflow-hidden bg-[#eee8dc] px-5 py-20 sm:px-6 sm:py-28 md:py-32">
 
         <div className="pointer-events-none absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#b89455]/15" />
 
@@ -590,14 +590,14 @@ export default function Home() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mx-auto mb-16 max-w-3xl text-center"
+            className="mx-auto mb-12 max-w-3xl text-center sm:mb-16"
           >
 
             <div className="text-[10px] font-semibold tracking-[0.45em] text-[#b89455]">
               HOW IT WORKS
             </div>
 
-            <h2 className="mt-5 font-serif text-5xl leading-tight tracking-[-0.02em] text-[#2c2822] md:text-7xl">
+            <h2 className="mt-5 font-serif text-4xl leading-tight tracking-[-0.02em] text-[#2c2822] sm:text-5xl md:text-7xl">
               Your celebration,
 
               <span className="block italic text-[#b89455]">
@@ -616,9 +616,9 @@ export default function Home() {
 
           <div className="relative">
 
-            <div className="absolute left-[10%] right-[10%] top-7 hidden h-px bg-gradient-to-r from-transparent via-[#b89455]/40 to-transparent md:block" />
+            <div className="absolute left-[10%] right-[10%] top-7 hidden h-px bg-gradient-to-r from-transparent via-[#b89455]/40 to-transparent lg:block" />
 
-            <div className="grid gap-10 md:grid-cols-5">
+            <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-10 lg:grid-cols-5">
 
               {[
                 {
@@ -694,11 +694,11 @@ export default function Home() {
           GALLERY PREVIEW
       ===================================================== */}
 
-      <section className="bg-[#f7f3ea] px-6 py-28 md:py-32">
+      <section className="bg-[#f7f3ea] px-5 py-20 sm:px-6 sm:py-28 md:py-32">
 
         <div className="mx-auto max-w-7xl">
 
-          <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div className="mb-10 flex flex-col justify-between gap-6 sm:mb-12 md:flex-row md:items-end">
 
             <div>
 
@@ -706,7 +706,7 @@ export default function Home() {
                 MEMORIES AT HERITAGE
               </div>
 
-              <h2 className="mt-5 font-serif text-5xl tracking-[-0.02em] text-[#2c2822] md:text-7xl">
+              <h2 className="mt-5 font-serif text-4xl tracking-[-0.02em] text-[#2c2822] sm:text-5xl md:text-7xl">
                 Moments
 
                 <span className="block italic text-[#b89455]">
@@ -794,7 +794,7 @@ export default function Home() {
 
       <section
         id="contact"
-        className="relative overflow-hidden border-y border-[#d8cdbc] bg-[#eee8dc] px-6 py-28 md:py-36 lg:px-16"
+        className="relative overflow-hidden border-y border-[#d8cdbc] bg-[#eee8dc] px-5 py-20 sm:px-6 sm:py-28 md:py-36 lg:px-16"
       >
 
         {/* Decorative background */}
@@ -810,14 +810,14 @@ export default function Home() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
-            className="mb-14 max-w-3xl"
+            className="mb-12 max-w-3xl sm:mb-14"
           >
 
             <div className="text-[10px] font-semibold tracking-[0.45em] text-[#b89455]">
               GET IN TOUCH
             </div>
 
-            <h2 className="mt-5 font-serif text-5xl leading-[0.95] tracking-[-0.025em] text-[#302b25] md:text-7xl">
+            <h2 className="mt-5 font-serif text-4xl leading-[0.95] tracking-[-0.025em] text-[#302b25] sm:text-5xl md:text-7xl">
               Let&apos;s plan
 
               <span className="block italic text-[#b89455]">
@@ -825,7 +825,7 @@ export default function Home() {
               </span>
             </h2>
 
-            <p className="mt-7 max-w-2xl text-sm leading-8 text-[#6f675d] md:text-base">
+            <p className="mt-6 max-w-2xl text-sm leading-7 text-[#6f675d] sm:mt-7 sm:leading-8 md:text-base">
               Whether you are planning a wedding, reception, corporate
               gathering or a special celebration, our team is here to help
               you create an unforgettable experience.
@@ -842,7 +842,7 @@ export default function Home() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.15 }}
-              className="rounded-[2rem] border border-[#d9cfbf] bg-[#fffdf8] p-7 shadow-[0_20px_60px_rgba(64,48,28,0.06)] md:p-9"
+              className="rounded-[1.75rem] border border-[#d9cfbf] bg-[#fffdf8] p-6 shadow-[0_20px_60px_rgba(64,48,28,0.06)] sm:rounded-[2rem] sm:p-7 md:p-9"
             >
 
               <div className="mb-8">
@@ -851,7 +851,7 @@ export default function Home() {
                   CONTACT DETAILS
                 </div>
 
-                <h3 className="mt-3 font-serif text-3xl text-[#302b25]">
+                <h3 className="mt-3 font-serif text-2xl text-[#302b25] sm:text-3xl">
                   We&apos;d love to hear from you.
                 </h3>
 
@@ -1034,7 +1034,7 @@ export default function Home() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.15 }}
-              className="relative min-h-[500px] overflow-hidden rounded-[2rem] border border-[#d9cfbf] bg-[#d9ccb8] shadow-[0_20px_60px_rgba(64,48,28,0.08)]"
+              className="relative min-h-[380px] overflow-hidden rounded-[1.75rem] border border-[#d9cfbf] bg-[#d9ccb8] shadow-[0_20px_60px_rgba(64,48,28,0.08)] sm:min-h-[500px] sm:rounded-[2rem]"
             >
 
               <iframe
@@ -1046,13 +1046,13 @@ export default function Home() {
               />
 
               {/* Map overlay card */}
-              <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/40 bg-[#fffdf8]/95 p-5 shadow-xl backdrop-blur-md md:left-7 md:right-auto md:w-[330px]">
+              <div className="absolute bottom-4 left-4 right-4 rounded-2xl border border-white/40 bg-[#fffdf8]/95 p-4 shadow-xl backdrop-blur-md sm:bottom-5 sm:left-5 sm:right-5 sm:p-5 md:left-7 md:right-auto md:w-[330px]">
 
                 <div className="text-[9px] font-semibold tracking-[0.3em] text-[#b89455]">
                   BOUDHA HERITAGE
                 </div>
 
-                <div className="mt-2 font-serif text-2xl text-[#302b25]">
+                <div className="mt-2 font-serif text-xl text-[#302b25] sm:text-2xl">
                   Find us in Boudha.
                 </div>
 
@@ -1084,7 +1084,7 @@ export default function Home() {
           FINAL CTA
       ===================================================== */}
 
-      <section className="relative overflow-hidden bg-[#d9ccb8] px-6 py-32">
+      <section className="relative overflow-hidden bg-[#d9ccb8] px-5 py-20 sm:px-6 sm:py-28 md:py-32">
 
         <div className="absolute inset-0 bg-gradient-to-br from-[#e9dfcf] via-[#d9ccb8] to-[#c6b59c]" />
 
@@ -1108,7 +1108,7 @@ export default function Home() {
             YOUR NEXT CELEBRATION
           </div>
 
-          <h2 className="mt-6 font-serif text-5xl leading-tight tracking-[-0.02em] text-[#2c2822] md:text-8xl">
+          <h2 className="mt-6 font-serif text-4xl leading-tight tracking-[-0.02em] text-[#2c2822] sm:text-5xl md:text-7xl lg:text-8xl">
             Let&apos;s Create
 
             <span className="block italic text-[#a27d3e]">
@@ -1148,11 +1148,11 @@ export default function Home() {
           FOOTER
       ===================================================== */}
 
-      <footer className="border-t border-[#463d32] bg-[#29251f] px-6 py-14 text-[#f7f3ea] lg:px-16">
+      <footer className="border-t border-[#463d32] bg-[#29251f] px-5 py-12 text-[#f7f3ea] sm:px-6 sm:py-14 lg:px-16">
 
         <div className="mx-auto max-w-[1400px]">
 
-          <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-10 sm:gap-12 sm:grid-cols-2 lg:grid-cols-4">
 
             {/* Brand */}
             <div>
@@ -1317,7 +1317,7 @@ export default function Home() {
 
 
           {/* Bottom */}
-          <div className="mt-14 flex flex-col justify-between gap-4 border-t border-white/10 pt-7 text-[10px] text-white/35 md:flex-row">
+          <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-7 text-[10px] text-white/35 sm:mt-14 md:flex-row md:items-center md:justify-between">
 
             <div>
               © 2026 Boudha Heritage. All rights reserved.
@@ -1326,9 +1326,10 @@ export default function Home() {
             <div>
               Boudha · Kathmandu · Nepal
             </div>
-            <div className="mt-5 text-center text-[10px] tracking-[0.18em] text-white/35">
-  Designed & Developed by Abhishek & Saurabh
-</div>
+
+            <div className="tracking-[0.18em] text-white/35 md:ml-auto">
+              Designed &amp; Developed by Abhishek &amp; Saurabh
+            </div>
 
           </div>
 

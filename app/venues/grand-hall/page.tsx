@@ -85,7 +85,7 @@ export default function GrandHallPage() {
           HERO
       ===================================================== */}
 
-      <section className="relative flex min-h-[88vh] items-end overflow-hidden bg-[#211d18]">
+      <section className="relative flex min-h-[75vh] items-end overflow-hidden bg-[#211d18] sm:min-h-[88vh]">
 
         <video
           className="absolute inset-0 h-full w-full object-cover"
@@ -102,7 +102,7 @@ export default function GrandHallPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#17120e]/85 via-transparent to-[#17120e]/10" />
 
         {/* Hero Content */}
-        <div className="relative z-10 mx-auto w-full max-w-[1600px] px-6 pb-20 pt-40 md:px-10 md:pb-28 lg:px-16">
+        <div className="relative z-10 mx-auto w-full max-w-[1600px] px-5 pb-16 pt-32 sm:px-6 sm:pb-20 sm:pt-40 md:px-10 md:pb-28 lg:px-16">
 
           <motion.div
             variants={fadeUp}
@@ -111,35 +111,35 @@ export default function GrandHallPage() {
             className="max-w-5xl"
           >
 
-            <div className="mb-7 flex items-center gap-4 text-[10px] font-semibold tracking-[0.45em] text-[#e3c38b]">
-              <span className="h-px w-12 bg-[#d0a75f]" />
+            <div className="mb-6 flex items-center gap-3 text-[9px] font-semibold tracking-[0.35em] text-[#e3c38b] sm:mb-7 sm:gap-4 sm:text-[10px] sm:tracking-[0.45em]">
+              <span className="h-px w-8 bg-[#d0a75f] sm:w-12" />
               SIGNATURE VENUE · 01
             </div>
 
-            <h1 className="font-serif text-6xl leading-[0.88] tracking-[-0.03em] text-white sm:text-7xl md:text-8xl lg:text-[120px]">
+            <h1 className="font-serif text-6xl leading-[0.92] tracking-[-0.02em] text-white xs:text-7xl sm:text-8xl sm:leading-[0.88] md:text-9xl lg:text-[120px]">
               Grand
               <span className="block italic text-[#dfbd7e]">
                 Hall.
               </span>
             </h1>
 
-            <p className="mt-8 max-w-2xl text-sm leading-8 text-white/75 md:text-lg">
+            <p className="mt-6 max-w-2xl text-sm leading-7 text-white/75 sm:mt-8 sm:leading-8 md:text-lg">
               A magnificent celebration space created for grand weddings,
               receptions, ceremonies and unforgettable occasions.
             </p>
 
-            <div className="mt-9 flex flex-wrap gap-4">
+            <div className="mt-7 flex flex-wrap gap-3 sm:mt-9 sm:gap-4">
 
               <Link
                 href="/availability"
-                className="rounded-full bg-[#d5aa62] px-7 py-4 text-xs font-semibold tracking-[0.18em] text-[#211b15] transition duration-300 hover:-translate-y-1 hover:bg-[#e4c27f]"
+                className="rounded-full bg-[#d5aa62] px-6 py-3.5 text-[11px] font-semibold tracking-[0.16em] text-[#211b15] transition duration-300 hover:-translate-y-1 hover:bg-[#e4c27f] sm:px-7 sm:py-4 sm:text-xs sm:tracking-[0.18em]"
               >
                 CHECK AVAILABILITY →
               </Link>
 
               <Link
                 href="/availability/inquiry"
-                className="rounded-full border border-white/35 bg-white/10 px-7 py-4 text-xs font-semibold tracking-[0.18em] text-white backdrop-blur-md transition duration-300 hover:border-[#e0bd7c] hover:bg-white/15 hover:text-[#e0bd7c]"
+                className="rounded-full border border-white/35 bg-white/10 px-6 py-3.5 text-[11px] font-semibold tracking-[0.16em] text-white backdrop-blur-md transition duration-300 hover:border-[#e0bd7c] hover:bg-white/15 hover:text-[#e0bd7c] sm:px-7 sm:py-4 sm:text-xs sm:tracking-[0.18em]"
               >
                 MAKE AN INQUIRY
               </Link>
@@ -168,11 +168,11 @@ export default function GrandHallPage() {
           VENUE OVERVIEW
       ===================================================== */}
 
-      <section className="relative overflow-hidden px-6 py-24 md:py-32 lg:px-16">
+      <section className="relative overflow-hidden px-5 py-16 sm:px-6 sm:py-24 md:py-32 lg:px-16">
 
         <div className="mx-auto max-w-[1400px]">
 
-          <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-24">
+          <div className="grid items-center gap-12 sm:gap-14 lg:grid-cols-2 lg:gap-24">
 
             {/* Text */}
             <motion.div
@@ -186,20 +186,20 @@ export default function GrandHallPage() {
                 THE GRAND HALL
               </div>
 
-              <h2 className="mt-6 font-serif text-5xl leading-[0.95] tracking-[-0.025em] text-[#302b25] md:text-7xl">
+              <h2 className="mt-6 font-serif text-4xl leading-[0.95] tracking-[-0.025em] text-[#302b25] sm:text-5xl md:text-7xl">
                 Made for
                 <span className="block italic text-[#b89455]">
                   grand occasions.
                 </span>
               </h2>
 
-              <p className="mt-8 max-w-xl text-sm leading-8 text-[#6f675d] md:text-base">
+              <p className="mt-6 max-w-xl text-sm leading-7 text-[#6f675d] sm:mt-8 sm:leading-8 md:text-base">
                 Designed as a statement celebration space, Grand Hall brings
                 together scale, comfort and an elegant atmosphere for events
                 that deserve something extraordinary.
               </p>
 
-              <p className="mt-5 max-w-xl text-sm leading-8 text-[#6f675d] md:text-base">
+              <p className="mt-5 max-w-xl text-sm leading-7 text-[#6f675d] sm:leading-8 md:text-base">
                 From weddings and receptions to large gatherings and special
                 celebrations, the space can be arranged around the needs of
                 your event.
@@ -222,7 +222,7 @@ export default function GrandHallPage() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
-              className="relative min-h-[430px] overflow-hidden rounded-[2rem] border border-[#ded5c7] bg-white shadow-[0_25px_80px_rgba(64,48,28,0.08)]"
+              className="relative min-h-[360px] overflow-hidden rounded-[1.75rem] border border-[#ded5c7] bg-white shadow-[0_25px_80px_rgba(64,48,28,0.08)] sm:min-h-[430px] sm:rounded-[2rem]"
             >
 
               {/* Decorative circles */}
@@ -237,11 +237,11 @@ export default function GrandHallPage() {
 
               <div className="absolute bottom-8 right-8 h-10 w-10 border-b border-r border-[#b89455]/30" />
 
-              <div className="relative flex min-h-[430px] items-center justify-center">
+              <div className="relative flex min-h-[360px] items-center justify-center sm:min-h-[430px]">
 
                 <div className="text-center">
 
-                  <div className="font-serif text-7xl tracking-[-0.04em] text-[#b89455] md:text-9xl">
+                  <div className="font-serif text-6xl tracking-[-0.04em] text-[#b89455] sm:text-7xl md:text-9xl">
                     2,000
                   </div>
 
@@ -272,7 +272,7 @@ export default function GrandHallPage() {
           FACILITIES
       ===================================================== */}
 
-      <section className="border-y border-[#ded5c7] bg-[#eee8dc] px-6 py-24 md:py-32 lg:px-16">
+      <section className="border-y border-[#ded5c7] bg-[#eee8dc] px-5 py-16 sm:px-6 sm:py-24 md:py-32 lg:px-16">
 
         <div className="mx-auto max-w-[1400px]">
 
@@ -281,14 +281,14 @@ export default function GrandHallPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mb-14 max-w-3xl"
+            className="mb-10 max-w-3xl sm:mb-14"
           >
 
             <div className="text-[10px] font-semibold tracking-[0.45em] text-[#b89455]">
               FACILITIES
             </div>
 
-            <h2 className="mt-5 font-serif text-5xl leading-[0.95] tracking-[-0.025em] text-[#302b25] md:text-7xl">
+            <h2 className="mt-5 font-serif text-4xl leading-[0.95] tracking-[-0.025em] text-[#302b25] sm:text-5xl md:text-7xl">
               Everything your
               <span className="block italic text-[#b89455]">
                 celebration needs.
@@ -303,7 +303,7 @@ export default function GrandHallPage() {
           </motion.div>
 
 
-          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
 
             {facilities.map((facility, index) => (
 
@@ -316,7 +316,7 @@ export default function GrandHallPage() {
                   duration: 0.7,
                   delay: index * 0.08,
                 }}
-                className="group rounded-[1.5rem] border border-[#ded5c7] bg-white p-8 shadow-[0_15px_45px_rgba(64,48,28,0.04)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_25px_60px_rgba(64,48,28,0.09)]"
+                className="group rounded-[1.5rem] border border-[#ded5c7] bg-white p-6 shadow-[0_15px_45px_rgba(64,48,28,0.04)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_25px_60px_rgba(64,48,28,0.09)] sm:p-8"
               >
 
                 <div className="flex items-center justify-between">
@@ -329,7 +329,7 @@ export default function GrandHallPage() {
 
                 </div>
 
-                <h3 className="mt-8 font-serif text-2xl text-[#302b25] md:text-3xl">
+                <h3 className="mt-6 font-serif text-xl text-[#302b25] sm:mt-8 sm:text-2xl md:text-3xl">
                   {facility.title}
                 </h3>
 
@@ -352,11 +352,11 @@ export default function GrandHallPage() {
           GALLERY
       ===================================================== */}
 
-      <section className="bg-[#f7f3ea] px-6 py-24 md:py-32 lg:px-16">
+      <section className="bg-[#f7f3ea] px-5 py-16 sm:px-6 sm:py-24 md:py-32 lg:px-16">
 
         <div className="mx-auto max-w-[1400px]">
 
-          <div className="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div className="mb-10 flex flex-col justify-between gap-6 sm:mb-14 md:flex-row md:items-end">
 
             <motion.div
               variants={fadeUp}
@@ -369,7 +369,7 @@ export default function GrandHallPage() {
                 GRAND HALL GALLERY
               </div>
 
-              <h2 className="mt-5 font-serif text-5xl leading-[0.95] tracking-[-0.025em] text-[#302b25] md:text-7xl">
+              <h2 className="mt-5 font-serif text-4xl leading-[0.95] tracking-[-0.025em] text-[#302b25] sm:text-5xl md:text-7xl">
                 See the
                 <span className="block italic text-[#b89455]">
                   space.
@@ -393,7 +393,7 @@ export default function GrandHallPage() {
           </div>
 
 
-          <div className="grid gap-5 md:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
 
             {gallery.map((image, index) => (
 
@@ -436,7 +436,7 @@ export default function GrandHallPage() {
           BOOKING CTA
       ===================================================== */}
 
-      <section className="relative overflow-hidden bg-[#2b241c] px-6 py-28 md:py-36 lg:px-16">
+      <section className="relative overflow-hidden bg-[#2b241c] px-5 py-20 sm:px-6 sm:py-28 md:py-36 lg:px-16">
 
         {/* Decorative circles */}
         <div className="absolute -right-32 -top-32 h-[450px] w-[450px] rounded-full border border-[#d0a75f]/10" />
@@ -458,7 +458,7 @@ export default function GrandHallPage() {
               PLAN YOUR EVENT
             </div>
 
-            <h2 className="mt-6 font-serif text-5xl leading-[0.95] tracking-[-0.025em] text-white md:text-8xl">
+            <h2 className="mt-6 font-serif text-4xl leading-[0.95] tracking-[-0.025em] text-white sm:text-5xl md:text-7xl lg:text-8xl">
               Your grand
               <span className="block italic text-[#dfbd7e]">
                 celebration starts here.
