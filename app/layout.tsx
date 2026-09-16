@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import FloatingContact from "./components/FloatingContact";
+import PublicChrome from "./components/PublicChrome";
 
 export const metadata: Metadata = {
   title: "Heritage | Where Heritage Meets Celebration",
@@ -17,9 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#f7f3ea] text-[#302b25] antialiased">
-        <Navbar />
-        {children}
-        <FloatingContact />
+        <PublicChrome>{children}</PublicChrome>
       </body>
     </html>
   );
